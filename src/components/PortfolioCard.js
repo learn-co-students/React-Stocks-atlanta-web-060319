@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Stock = (props) => (
+const PortfolioCard = (props) => (
   <div>
 
     <div className="card">
@@ -12,8 +12,8 @@ const Stock = (props) => (
         <p className="card-text">
             {props.stock.ticker} - {props.stock.price}
           </p>
-          
-          <button stocks={props.stocks} onClick={() => props.buyStock(props.stock)}> Buy Stock</button>
+          <button  onClick={() => props.sellStock(props.stock)}> Sell Stock</button>  
+         
       </div>
     </div>
 
@@ -21,4 +21,4 @@ const Stock = (props) => (
   </div>
 );
 
-export default Stock
+export default PortfolioCard
